@@ -1,8 +1,10 @@
 :root {
   font-family: system-ui;
   display:flex;
+  overflow-x: hidden;
   justify-content:center;
   align-items:center;
+  margin: 0 0 0 0;
 }
 .headtohead {
 	display:flex;
@@ -15,9 +17,10 @@
 header {
   display: grid;
   place-items: center; 
-  min-height: 1vh;
-  min-height: 1vh;
-  background-color: #fef0e0
+  width: 100%;
+  background-color: #fff;
+  
+  
 }
 
 .header-lnks {
@@ -33,7 +36,8 @@ header {
   justify-content:center;
   align-items:center;
   width: 100vw;
-  height: 9vh;
+  height: 1vh;
+  
 }
 
 .header-lnks a {
@@ -47,27 +51,35 @@ header {
 }
 
 main {
+  position: relative;
   display: grid;
   place-items: center; /* Centra tanto vertical como horizontalmente */
-  min-height: 100vh;
+  min-height: 110vh;
   min-height: 100vh; /* Se adapta si el contenido es más alto que la pantalla */
   padding: 30px;  
-  margin-left: 10vw;
-}
-
-.screen-img {
   
+  margin: 0 0 0 0;
 
+}
+@media (width < 1000px) {
+  main {
+    position: absolute;
+  }
+}
+.screen-img {
+
+  position: relative;
+  right: 3vw;
   border-radius: 10px;
-  height: 400px;
-  width: 60%;
+  height: 550px;
+  width: 68%;
   box-sizing: border-box;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('Problemas por falta de mantenimiento/oradtrippin.png');
   background-position: left;
   text-align:left;
-  margin:10px 23vw;
+  
   
 }
 
@@ -88,7 +100,8 @@ main {
   padding-left: 40px;
   justify-content:center;
   align-items:center;
-  
+  position: relative;
+  right: 3vw;
   
   
 }
@@ -113,7 +126,7 @@ main {
 }
 .text-contain {
   margin-right:23vw;
-  margin-left: 3vw;
+  margin-left: 20vw;
   font-size: 17px;
 }
 @media (width < 600px) {
@@ -135,4 +148,3 @@ lateral-info {
   left:100vw;
   top:50vh;
 }
-@keyframe 

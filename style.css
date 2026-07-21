@@ -54,8 +54,8 @@ header div {
 
 }
 main {
-	margin-right: 40vw;
-	margin-left: 20vw;
+	margin-right: 10vw;
+	margin-left: 10vw;
 }
 
 .screen-img {
@@ -67,11 +67,7 @@ main {
   background-size: cover;
   background-position: left;
   text-align:left;
-  transition: 1s ;
   
-}
-.screen-img:hover {
-  transform: scale(1.01);
 }
 
 .screen-img h1 {
