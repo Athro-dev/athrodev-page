@@ -1,0 +1,138 @@
+:root {
+  font-family: system-ui;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.headtohead {
+	display:flex;
+	flex-direction:rows;
+	background-color:rgb(247, 197, 61);
+	justify-content:center;
+	margin: 0px;
+}
+
+header {
+  display: grid;
+  place-items: center; 
+  min-height: 1vh;
+  min-height: 1vh;
+  background-color: #fef0e0
+}
+
+.header-lnks {
+	text-align:center;
+}
+
+.header-lnks {
+  text-align: center;
+  display: flex;
+  margin: 20px;
+  padding-left: 40px;
+  font-family: system-ui;
+  justify-content:center;
+  align-items:center;
+  width: 100vw;
+  height: 9vh;
+}
+
+.header-lnks a {
+  
+  flex-direction: row;
+  color: black;
+  text-decoration: none;
+  padding: 20px;
+  margin-bottom: 10px 15px
+
+}
+
+main {
+  display: grid;
+  place-items: center; /* Centra tanto vertical como horizontalmente */
+  min-height: 100vh;
+  min-height: 100vh; /* Se adapta si el contenido es más alto que la pantalla */
+  padding: 30px;  
+  margin-left: 10vw;
+}
+
+.screen-img {
+  
+
+  border-radius: 10px;
+  height: 400px;
+  width: 60%;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('Problemas por falta de mantenimiento/oradtrippin.png');
+  background-position: left;
+  text-align:left;
+  margin:10px 23vw;
+  
+}
+
+.screen-img h1 {
+  
+  position: sticky;
+  top: 100%;
+  padding: 10px;
+  color: white;
+  background-color: black;
+  
+  
+}
+.tags  {
+  text-align: center;
+  display: flex;
+  margin: 10px;
+  padding-left: 40px;
+  justify-content:center;
+  align-items:center;
+  
+  
+  
+}
+.tags span {
+  margin-right: 10px;
+  
+}
+
+.tags button{
+  background-color: rgb(252, 196, 93);
+  flex-direction: row;
+  color: rgb(37, 37, 37);
+  text-decoration: none;
+  margin-right: 10px;
+  margin-bottom: 10px 15px;
+  border: 0px;
+  padding: 10px;
+  border-radius: 10cm;
+  text-transform: capitalize;
+  font-family: monospace;
+
+}
+.text-contain {
+  margin-right:23vw;
+  margin-left: 3vw;
+  font-size: 17px;
+}
+@media (width < 600px) {
+  .text-contain {
+    text-align: left;
+    transform: translateX(45px);
+    
+  }
+  
+  
+
+  main {
+    text-align: center;
+  }
+}
+
+lateral-info {
+  position: absolute;
+  left:100vw;
+  top:50vh;
+}
+@keyframe 
