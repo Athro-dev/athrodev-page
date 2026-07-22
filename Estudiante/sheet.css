@@ -69,7 +69,7 @@ main {
 .screen-img {
 
   position: relative;
-  right: 3vw;
+  right: 1vw;
   border-radius: 100000px;
   height: 400px;
   width: 30%;
@@ -85,13 +85,14 @@ main {
 }
 
 .screen-img h1 {
-  border-radius: 10000px;
+  border-radius: 100000px;
   position: sticky;
   top: 100%;
   padding: 10px;
   color: white;
   background-color: rgba(0,0,0,0.5);
   text-align: center;
+
   
   
 }
@@ -112,6 +113,28 @@ main {
   
 }
 
+
+.habs {
+  background-color: rgb(218, 255, 243);
+  border-radius: 20px;
+  padding: 4px;
+  position: relative;
+  right: 21px;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+.subtitles {
+  text-align: center;
+  width: 100%;
+  padding: 10px; 
+   
+
+
+}
+
+
+
+
 .tags button{
   background-color: rgb(252, 196, 93);
   flex-direction: row;
@@ -130,6 +153,7 @@ main {
   margin-right:23vw;
   margin-left: 20vw;
   font-size: 17px;
+  
 }
 @media (width < 600px) {
   .text-contain {
