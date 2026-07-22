@@ -1,48 +1,43 @@
 :root {
   font-family: system-ui;
   display:flex;
+  overflow-x: hidden;
   justify-content:center;
   align-items:center;
+  margin: 0 0 0 0;
 }
 .headtohead {
 	display:flex;
 	flex-direction:rows;
-	background-color:white;
+	background-color:rgb(247, 197, 61);
 	justify-content:center;
 	margin: 0px;
 }
-.headtohead section {
-	text-align:center;
-	position:relative;
-	top: 10px;
-}
-.headtohead a {
-	position:relative;
-	top: 10px;
-}
 
+header {
+  display: grid;
+  place-items: center; 
+  width: 100%;
+  background-color: #fff;
+  
+  
+}
 
 .header-lnks {
 	text-align:center;
-}
-
-header div {
-  
-  width: 100vw;
-  height: 4vh;
 }
 
 .header-lnks {
   text-align: center;
   display: flex;
-  margin: 10px;
-  
+  margin: 20px;
   padding-left: 40px;
   font-family: system-ui;
   justify-content:center;
   align-items:center;
   width: 100vw;
-  height: 9vh;
+  height: 1vh;
+  
 }
 
 .header-lnks a {
@@ -50,33 +45,43 @@ header div {
   flex-direction: row;
   color: black;
   text-decoration: none;
-  padding: 1px;
-  
+  padding: 20px;
+  margin-bottom: 10px 15px
 
 }
+
 main {
-	margin-right: 10vw;
-	margin-left: 10vw;
-}
+  position: relative;
+  display: grid;
+  place-items: center; /* Centra tanto vertical como horizontalmente */
+  min-height: 110vh;
+  min-height: 100vh; /* Se adapta si el contenido es más alto que la pantalla */
+  padding: 30px;  
+  
+  margin: 0 0 0 0;
 
+}
+@media (width < 1000px) {
+  main {
+    position: absolute;
+  }
+}
 .screen-img {
+
+  position: relative;
+  right: 3vw;
   border-radius: 10px;
-  height: 400px;
-  width: 100%;
+  height: 550px;
+  width: 68%;
   box-sizing: border-box;
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: url('Problemas por falta de mantenimiento/oradtrippin.png');
   background-position: left;
   text-align:left;
-  box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.2);
-  transition: 1s;
+  
+  
 }
-.screen-img:hover {
-  transform: scale(1.01);
-  box-shadow: 1px 5px 5px 1px  rgb(217, 254, 200);
-}
-
-
 
 .screen-img h1 {
   
@@ -86,6 +91,7 @@ main {
   color: white;
   background-color: rgba(0,0,0,0.8);
   
+  
 }
 .tags  {
   text-align: center;
@@ -94,7 +100,8 @@ main {
   padding-left: 40px;
   justify-content:center;
   align-items:center;
-  
+  position: relative;
+  right: 3vw;
   
   
 }
@@ -119,7 +126,7 @@ main {
 }
 .text-contain {
   margin-right:23vw;
-  margin-left: 3vw;
+  margin-left: 20vw;
   font-size: 17px;
 }
 @media (width < 600px) {
